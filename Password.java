@@ -7,8 +7,8 @@ abstract class Password
     this.pass = ps;
   }
   
-  public abstract char[] generatePass(); //returns a character array of the password desired, generated randomly, each subclass should override this
-  public abstract boolean guess(); //runs prompt for player to guess pass, compares using this class's compare() method to determine validity, each subclass should override this
+  public abstract char[] generatePass(); //each subclass should override this
+  public abstract boolean guess(); //each subclass should override this
   
   /*
   * only this method can tell you whether the password was correct or not, 
@@ -16,10 +16,10 @@ abstract class Password
   */
   public boolean compare(char[] pass2) 
   {
-      if(pass.length !== pass2.length)
+      if(pass.length != pass2.length)
           return false;
-      for(int i = 0; i<pass.length; i++;) {
-          if(pass[i] !== pass2[i])
+      for(int i = 0; i<pass.length; i++) {
+          if(pass[i] != pass2[i])
               return false;
       }
       return true;
