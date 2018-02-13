@@ -26,6 +26,6 @@ class Driver
         
       System.out.println("Would you like to play again? ('y'/'n')");
       playFlag = io.nextLine.charAt(0);
-    } while(playFlag.equalsIgnoreCase('y'));
+    } while(playFlag.toLowerCase()==('y'));
   }
 }
