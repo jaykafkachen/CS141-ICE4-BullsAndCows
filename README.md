@@ -6,12 +6,12 @@ Password Guessing Game ("Bulls and Cows")
 
 TO DO: //Put your name wherever you can work on stuff
 - Implement the password generator for Login, which works on ASCII values and ints to generate 8 letter passwords of lowercase chars(JAY)
-- Implement the Login class guess method (JAY)
-**NOTE**
-- I WILL WRITE A COMPARE METHOD THAT TELLS AT WHICH INDEXES THE PASSWORD IS FALSE in the Password class, this can be used for both Login and TwoFactorAuth
+
+- Implement the Login class guess method (glorified hangman) //use the compare method in the Password class
 
 - Implement the password generator for 2FactorAuth, which generates a 3-5 digit random password comprised of ints
-- Implement the 2FactorAuth class guess method (The bulls and cows system described in the link above)
+
+- Implement the 2FactorAuth class guess method (The bulls and cows system described in the link above) //use the compare method in the Password class
 
 DONE:
 - Driver that runs and determines which class object is called when (JAY) 
