@@ -4,7 +4,7 @@ abstract class Password
 
   public Password()
   {
-    this.pass = generatePass();
+    this.pass = generatePass(); //this will tell the compiler to look for a implementation in some subclass
   }
   
   public abstract char[] generatePass(); //each subclass should override this
