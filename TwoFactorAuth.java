@@ -14,8 +14,9 @@ class TwoFactorAuth extends Password
   
   //overridden from Password class, use this to 
   //determine where the digits are incorrect etc basically the bulls and cows rules
-  public boolean compare(char[] pass2) 
+  public char[] compare(char[] pass2) 
   {
+    char[] places = super.compare(pass2);
   }
   
   //overridden from Superclass Password, prompts user to guess password til they get 
