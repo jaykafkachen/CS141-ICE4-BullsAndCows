@@ -7,15 +7,15 @@ class Driver
     Scanner io = new Scanner(System.in);
     char playFlag = 'y';
     boolean proceed = true;
-    Login lvlOne = new Login();
-    TwoFactorAuth lvlTwo = new TwoFactorAuth();
     System.out.println("Welcome to the Password Guessing Game!");
     do
     { 
+      Login lvlOne = new Login();
       System.out.println("Level 1: Guess a random password of 8 characters, letters and numbers only (with hints):");
       proceed = lvlOne.guess();
       if(proceed)
       {
+        TwoFactorAuth lvlTwo = new TwoFactorAuth();
         System.out.println("Congratulations! You may now advance to...\nLevel 2: Guess a random 3-5 digit authentication code (with hints)."
         proceed = lvl2.guess();
       }
