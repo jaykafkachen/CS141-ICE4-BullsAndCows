@@ -9,9 +9,9 @@ TO DO: //Put your name wherever you can work on stuff
 
 - Implement the Login class guess method (glorified hangman) //use the compare method in the Password class
 
-- Implement the password generator for 2FactorAuth, which generates a 3-5 digit random password comprised of ints
+- Implement the password generator for 2FactorAuth, which generates a 3-5 digit random password comprised of ints (Tyler)
 
-- Implement the 2FactorAuth class guess method (The bulls and cows system described in the link above) //use the compare method in the Password class
+- Implement the 2FactorAuth class guess method (The bulls and cows system described in the link above) //use the compare method in the Password class (Tyler)
 
 DONE:
 - Driver that runs and determines which class object is called when (JAY) 
