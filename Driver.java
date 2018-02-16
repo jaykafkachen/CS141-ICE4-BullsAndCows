@@ -11,7 +11,7 @@ public class Driver {
 	    do
 	    { 
 	      Login lvlOne = new Login();
-	      System.out.println("Level 1: Guess a random password of 8 lowercase letters:\n(hints for indexes and correct letters)");
+	      System.out.println("\nLevel 1: Guess a random password of 6 lowercase letters:\n(hints for indexes and correct letters)");
 	      proceed = lvlOne.guess();
 	      if(proceed)
 	      {
@@ -22,7 +22,7 @@ public class Driver {
 	      if(proceed)
 	        System.out.println("Congratulations! You have solved the password guessing game.");
 	      else
-	        System.out.println("Give up? Better luck next time!");
+	        System.out.println("\nGive up? Better luck next time!");
 	        
 	      System.out.print("Would you like to play again? ('y'/'n')\n-->");
 	      playFlag = io.next().charAt(0);
