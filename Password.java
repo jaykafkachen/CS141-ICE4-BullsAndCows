@@ -41,10 +41,10 @@ public abstract class Password
 		return wrongPlaces;
 	}
 	
-	public boolean passEquals(char[] pass2)
+	public static boolean passEquals(char[] pass1, char[] pass2)
 	{
 		int i=0;
-		for(char p:pass)
+		for(char p:pass1)
 		{
 			if(p!=pass2[i])
 				return false;
