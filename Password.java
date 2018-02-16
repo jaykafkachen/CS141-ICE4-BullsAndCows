@@ -14,13 +14,16 @@ public abstract class Password
 	public char[] compare(char[] pass2) //returns a char[] of the password with - where there is a wrong guess and the correct output for a right guess
 	{
 		char[] wrongPlaces = new char[pass.length];
+		char[] tempPass = new char[pass.length]; //used for comparisons so that you dont modify password value
+		System.arraycopy(pass, 0, tempPass, 0, pass.length );
 		for(int i = 0; i<pass.length; i++) 
 		{
-			if(pass[i] != pass2[i])
+			if(tempPass[i] != pass2[i])
 			{
-				if(String.valueOf(pass).contains(String.valueOf(pass2[i])))
+				if(String.valueOf(tempPass).contains(String.valueOf(pass2[i])))
 				{
-					wrongPlaces[i] = (char) (String.valueOf(pass).indexOf(String.valueOf(pass2[i]))+'0');
+					wrongPlaces[i] = (char) (String.valueOf(tempPass).indexOf(String.valueOf(pass2[i]))+'0');
+					tempPass[i] = '*'; //filler character, so that contains will move to next instance of letter
 				}
 				else
 				{
