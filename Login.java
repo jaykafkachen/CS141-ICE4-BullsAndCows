@@ -45,7 +45,7 @@ public class Login extends Password
 			}
 			passguess = input.toCharArray();
 			truepass = compare(passguess);
-			if(passEquals(truepass, passguess))
+			if(super.passEquals(truepass, passguess))
 				return true;
 			else
 			{
