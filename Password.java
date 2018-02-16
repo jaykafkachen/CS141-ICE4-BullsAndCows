@@ -41,8 +41,15 @@ public abstract class Password
 		return wrongPlaces;
 	}
 	
-	protected char[] getPass()
+	public boolean passEquals(char[] pass2)
 	{
-		return pass;
+		int i=0;
+		for(char p:pass)
+		{
+			if(p!=pass2[i])
+				return false;
+			i++;
+		}
+		return true;
 	}
 }
