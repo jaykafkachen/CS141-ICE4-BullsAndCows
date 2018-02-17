@@ -13,10 +13,12 @@ class TwoFactorAuth extends Password
   //.asciitable.com/)
   public char[] generatePass() 
   {
-        
-    char[] pass2 = new char[3];
+	Scanner kb = new Scanner(System.in);
+	System.out.print("Is the numerical password 3, 4, or 5 digits?");
+	int digit = kb.nextInt();    
+    char[] pass2 = new char[digit];
  
-    for(int i=0; i<pass2.length; i++)
+    for(int i=0; i<digit; i++)
     {
     	pass2[i] = (char)(48 + (int)(Math.random() * (57-48) + 1));
     }
@@ -38,12 +40,13 @@ class TwoFactorAuth extends Password
 	  Scanner kb = new Scanner(System.in);
 	  boolean end2 = false;
 	  int digit = 0;
+	  System.out.print("Is the numerical password 3, 4, or 5 digits?");
+	  digit = kb.nextInt(); 
 	  String input2 = "";
 	  char[] passguess2 = new char[digit];
 	  char[] truepass2 = new char[digit];
 	  
-	  System.out.print("Is the numerical password 3, 4, or 5 digits?");
-	  digit = kb.nextInt();
+	  
 	  while(end2!=true)
 	  {
 		System.out.print("\n Guess the password\n-->");
@@ -68,6 +71,14 @@ class TwoFactorAuth extends Password
 	  			else
 	  				System.out.print("-");
 	  		}
+	  		System.out.print("\nNumbers: ");
+			for(char c2:truepass2)
+			{
+				if(Character.isDigit(c2))
+					System.out.print(c2);
+				else
+					System.out.print("-");
+			}
 	  		System.out.print("\nDo you want to quit? (y/n)\n-->");
 	  		if(kb.nextLine().equalsIgnoreCase("y"))
 	  			end2 = true;
