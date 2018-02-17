@@ -65,9 +65,9 @@ public class Login extends Password
 					else
 						System.out.print("-");
 				}
-				//System.out.print("\nDo you want to quit? (y/n)\n-->");
-				//if(io.nextLine().equalsIgnoreCase("y"))
-				//	end = true;
+				System.out.print("\nDo you want to quit? (y/n)\n-->");
+				if(io.nextLine().equalsIgnoreCase("y"))
+					end = true;
 			}
 		}
 		return false;
