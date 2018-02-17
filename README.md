@@ -9,6 +9,8 @@ TO DO: //Put your name wherever you can work on stuff
 
 - Implement the 2FactorAuth class guess method (The bulls and cows system described in the link above) //use the compare method in the Password class (Tyler)
 
+NOTE: Everything compiles but as of right now, you are not able to go on to the Two Factor Authentification part once you solve the first password. I'm working on a fix.
+
 DONE:
 - Driver that runs and determines which class object is called when (JAY) 
 - Password class with compare() method that returns an char array of the correct letters if guessed in right spot, the index of correct letters placed in the wrong place, and '-' character for incorrect altogether letters. this method can be used for both guess() methods
